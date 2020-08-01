@@ -15,10 +15,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if (! $this->app->environment(['local','testing'])) 
-        {
-            \URL::forceScheme('https');
-        }
+        //if (! $this->app->environment(['local','testing'])) 
+        //{
+        //    \URL::forceScheme('https');
+        //}
 
         Schema::defaultStringLength(191);
     }

@@ -42,19 +42,5 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "optimize-autoloader": true
-    },
-    "scripts": {
-        "your-cmd": [
-            "cd /opt/app-root/src",
-            "mkdir -p storage",
-            "cp -rp /opt/app-root/src/public/storage/* /opt/app-root/src/storage",
-            "rm -rf /opt/app-root/src/public/storage"
-        ],
-        "post-install-cmd": [
-            "@your-cmd"
-        ],
-        "post-update-cmd": [
-            "@your-cmd"
-        ]
     }
 }
